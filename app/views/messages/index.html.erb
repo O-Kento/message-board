@@ -6,7 +6,7 @@
   
   <div class="panel-body">
     <% @messages.each do |message| %>
-      <span class="label label-info"><%= message.name %></span>
+      <span class="label label-info"><%= message.name %>&nbsp;<%= message.age %>th</span>
       <%= message.body %>
            (
       <%= link_to "edit" , edit_message_path(message)  %>
